@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $blue;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+p b {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+p {
+  a {
+    text-decoration: underline;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1.167;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.333;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body {
+  font-family: tenon, sans-serif;
+  color: $dark-blue;
+  font-size: 1.125rem;
+  line-height: 1.778;
+  background-color: #faf9f9;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+main {
+  margin-bottom: 40px;
+}
+.main__wrapper {
+  box-shadow: $shadow;
+  background-color: #fff;
+}
+
+.social {
+  display: flex;
+  li + li {
+    margin-left: 16px;
+    a {
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.tag {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-family: poster-gothic-cond-atf, sans-serif;
+}
+.mb-1 {
+  margin-bottom: 8px !important;
+}
+.mb-2 {
+  margin-bottom: 16px !important;
+}
+.mb-3 {
+  margin-bottom: 24px !important;
+}
+.banlink {
+  width: 100%;
+  height: 128px;
+  display: block;
+  max-width: 1920px;
+  margin: 0 auto 40px;
+  .container {
+    height: 100%;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+.link {
+  color: $dark-blue;
+  font-size: 0.875rem;
+  position: relative;
+  margin-left: auto;
+  display: block;
+  text-align: right;
+  padding-right: 24px;
+  font-weight: 700;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/svg/arrow-right.svg');
+    width: 16px;
+    height: 10px;
+    right: 0;
+    top: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.subtitle {
+  font-size: 1.25rem;
+  font-family: poster-gothic-cond-atf, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}

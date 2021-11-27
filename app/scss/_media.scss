@@ -1,0 +1,27 @@
+@media (max-width: 740px) {
+  .banlink {
+    height: 122px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  p b {
+    font-size: 1.125rem;
+    line-height: 1.778;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  main {
+    margin-bottom: 24px;
+  }
+  body {
+    background-color: #fff;
+  }
+  .main__wrapper {
+    box-shadow: none;
+  }
+}
