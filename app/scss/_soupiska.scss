@@ -13,6 +13,11 @@
     display: flex;
     margin-bottom: 24px;
     &:hover {
+      .soupiska__info {
+        a {
+          text-decoration: underline;
+        }
+      }
       .soupiska__img {
         &::after,
         &::before,
