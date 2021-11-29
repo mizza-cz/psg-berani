@@ -1,0 +1,83 @@
+.soupiska {
+  &__row {
+    display: flex;
+    margin-left: -14px;
+    margin-right: -14px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  &__item {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    padding: 0 14px;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__info {
+    padding: 14px 8px 5px;
+    a {
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      display: block;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: $dark-gray;
+    }
+  }
+  &__img {
+    margin-right: 8px;
+
+    img {
+      background: linear-gradient(180deg, #ece9e9 0%, #dad3d3 100%);
+      border-right: 8px solid $yellow;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .soupiska__item {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 840px) {
+  .soupiska-page {
+    .container {
+      padding: 0;
+    }
+    .main-padding {
+      padding: 40px 32px;
+    }
+  }
+  .soupiska {
+    .main__header {
+      display: block;
+      h2 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .soupiska__item {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .soupiska-page {
+    .main-padding {
+      padding: 40px 16px;
+    }
+  }
+  .soupiska .main__header {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+  }
+}
