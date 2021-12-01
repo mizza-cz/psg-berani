@@ -25,3 +25,10 @@
     box-shadow: none;
   }
 }
+@media (max-width: 360px) {
+  .menu-filtr {
+    b {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,318 @@
+.zapasy {
+  margin-bottom: 16px;
+  &__inner {
+    display: flex;
+    box-shadow: $shadow;
+    background-color: #fff;
+
+    padding: 40px;
+  }
+  &__links {
+    display: flex;
+  }
+  &__link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.57;
+    position: relative;
+    color: $dark-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+    &--vyjezd {
+      padding-left: 22px;
+      &::before {
+        width: 14px;
+        height: 16px;
+        top: 0px;
+        background-image: url('../images/svg/bus.svg');
+      }
+    }
+    &--report {
+      padding-left: 24px;
+      &::before {
+        background-image: url('../images/svg/report.svg');
+        width: 16px;
+        height: 16px;
+        top: 1px;
+      }
+    }
+    &--tikets {
+      padding-left: 28px;
+      &::before {
+        background-image: url('../images/svg//tickets.svg');
+        width: 20px;
+        height: 16px;
+        top: 2px;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+  }
+  &__date {
+    font-size: 0.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: poster-gothic-cond-atf, sans-serif;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  &__box {
+    display: flex;
+    margin-bottom: 16px;
+    &-teams {
+      padding-left: 16px;
+      border-left: 1px solid $dark-gray;
+      margin-left: 8px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      .zapas__team--long {
+        display: block;
+      }
+      span {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.5;
+        font-stretch: normal;
+        font-style: normal;
+      }
+    }
+    &-result {
+      padding-left: 8px;
+      margin-left: 8px;
+      align-self: center;
+      border-left: 1px solid $dark-gray;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      span {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.4;
+        font-stretch: normal;
+        font-style: normal;
+        min-width: 24px;
+        text-align: center;
+      }
+    }
+    &-img {
+      height: 64px;
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}
+
+.zapas {
+  padding: 8px 0;
+  border-bottom: 1px solid $silver;
+  .zapasy__date {
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  &__info {
+    margin-top: 9px;
+  }
+  &__inner {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__score {
+    min-width: 148px;
+    padding-left: 16px;
+  }
+  &__score,
+  &__score a {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  &__result {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 0 14px 0 12px;
+    align-items: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    .zapasy__link {
+      display: block;
+    }
+  }
+  &__box {
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+  }
+  &__logos {
+    height: 64px;
+    padding-right: 32px;
+    white-space: nowrap;
+  }
+  &__logo {
+    width: 64px;
+    float: left;
+    height: 64px;
+  }
+  &__teams {
+    span {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5;
+      font-stretch: normal;
+      font-style: normal;
+    }
+  }
+  &__team--long {
+    display: inline-block;
+  }
+  &__team--short {
+    display: none;
+  }
+}
+a.zapas__teams {
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+.zapasy__link + .zapasy__link {
+  margin-left: 12px;
+}
+
+@media (max-width: 1240px) {
+  .zapasy-page {
+    .main-padding {
+      padding: 32px 20px;
+    }
+  }
+  .zapasy__inner {
+    padding: 32px 20px;
+  }
+  .zapasy__box-teams {
+    .zapas__team--long {
+      display: none;
+    }
+    .zapas__team--short {
+      display: block;
+    }
+  }
+  .zapas {
+    &__team--short {
+      display: inline-block;
+    }
+    &__team--long {
+      display: none;
+    }
+  }
+}
+@media (max-width: 840px) {
+  .zapasy__item {
+    .zapasy__date {
+      text-align: center;
+    }
+  }
+  .zapasy__links,
+  .zapasy__box {
+    justify-content: center;
+  }
+  .zapas__score {
+    min-width: 100px;
+  }
+  .zapasy__inner {
+    flex-wrap: wrap;
+  }
+  .zapasy__item {
+    flex: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid $silver;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .zapasy__link + .zapasy__link {
+    margin-left: 8px;
+  }
+  .zapas__result {
+    margin-top: 0;
+    display: block;
+
+    .zapasy__link {
+      display: inline-block;
+    }
+  }
+
+  .zapas__result {
+    .zapasy__link {
+      height: 16px;
+      span {
+        display: none;
+      }
+    }
+  }
+  .zapas__logos {
+    padding-right: 16px;
+  }
+  .zapasy-page {
+    .main__header {
+      display: block;
+      h2 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .zapasy-page {
+    margin-bottom: 12px;
+  }
+  .zapasy-page .main-padding {
+    padding: 16px 0;
+  }
+  .zapasy {
+    margin-bottom: 0;
+    &__inner {
+      box-shadow: none;
+      padding: 32px 0 16px;
+    }
+    .container {
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .zapas__info {
+    margin-top: 0;
+  }
+  .zapas__score {
+    padding-left: 0;
+    min-width: auto;
+  }
+  .zapas__result {
+    width: 33.333%;
+    padding: 0 12px;
+  }
+  .zapas__logos {
+    display: none;
+  }
+}
