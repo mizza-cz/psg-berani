@@ -19,6 +19,42 @@
     &:hover {
       text-decoration: underline;
     }
+    &--online {
+      padding-left: 24px;
+      &::before {
+        width: 16px;
+        height: 16px;
+        top: 1px;
+        background-image: url('../images/svg/repeat.svg');
+      }
+    }
+    &--preview {
+      padding-left: 24px;
+      &::before {
+        width: 16px;
+        height: 12px;
+        background-image: url('../images/svg/eye.svg');
+        top: 3px;
+      }
+    }
+    &--foto {
+      padding-left: 24px;
+      &::before {
+        width: 16px;
+        height: 14px;
+        background-image: url('../images/svg/camera.svg');
+        top: 1px;
+      }
+    }
+    &--tiskovka {
+      padding-left: 28px;
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-image: url('../images/svg/messages.svg');
+        top: 1px;
+      }
+    }
     &--vyjezd {
       padding-left: 22px;
       &::before {

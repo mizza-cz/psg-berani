@@ -239,6 +239,12 @@ main {
     background-repeat: no-repeat;
   }
 }
+.link.link--yellow {
+  color: $yellow;
+  &::before {
+    background-image: url('../images/svg/arrow-right-yellow.svg');
+  }
+}
 .subtitle {
   font-size: 1.25rem;
   font-family: poster-gothic-cond-atf, sans-serif;
@@ -275,4 +281,30 @@ main {
 }
 .win {
   color: $green;
+}
+
+// tabs
+.tabs {
+  display: flex;
+  margin-bottom: 11px;
+  li + li {
+    margin-left: 24px;
+  }
+}
+
+.tab {
+  color: $dark-gray;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+
+  &.active {
+    color: $dark-blue;
+  }
+  &__content {
+    display: none;
+    &.tab-active {
+      display: block;
+    }
+  }
 }
