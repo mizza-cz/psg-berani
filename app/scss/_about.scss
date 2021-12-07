@@ -1,0 +1,31 @@
+.about {
+  h2 {
+    margin-bottom: 32px;
+  }
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $silver;
+    margin-bottom: 24px;
+  }
+  &__info {
+    ul {
+      margin-bottom: 24px;
+    }
+  }
+  &__logo {
+    width: 250px;
+    height: auto;
+    margin-right: 64px;
+  }
+}
+
+@media (max-width: 660px) {
+  .about__header {
+    display: block;
+  }
+  .about__logo {
+    margin-bottom: 24px;
+  }
+}

@@ -4,6 +4,11 @@
   }
 }
 @media (max-width: 920px) {
+  .main {
+    .main-padding {
+      padding: 32px 24px;
+    }
+  }
   .homepage-video__player {
     max-width: 100%;
     flex: 100%;
@@ -68,7 +73,19 @@
     box-shadow: none;
   }
 }
-
+@media (max-width: 640px) {
+  .about {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+  }
+  .main {
+    .main-padding {
+      padding: 32px 0px 24px;
+    }
+  }
+}
 @media (max-width: 570px) {
   .homepage .clanky {
     margin-bottom: 24px;
