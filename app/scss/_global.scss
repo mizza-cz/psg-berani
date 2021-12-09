@@ -333,3 +333,54 @@ main {
     }
   }
 }
+
+.table-responsive {
+  margin: 16px 0;
+  border: 0;
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
+
+  tr th {
+    background-color: $silver;
+  }
+  tr td {
+    border-bottom: 1px solid $silver;
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  tr td,
+  tr th {
+    padding: 8px 12px 4px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.75;
+    width: 100%;
+  }
+  tr th.number,
+  tr td.number {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    table {
+      width: 720px;
+    }
+  }
+}
