@@ -4,7 +4,13 @@
 }
 .article-slider {
   height: 544px;
+  position: relative;
   .slick-slide.slick-active {
+    .article {
+      &::before {
+        background: linear-gradient(to bottom, rgba(0, 26, 63, 0), rgba(0, 26, 63, 0.8));
+      }
+    }
     h1 {
       opacity: 1;
     }
@@ -22,6 +28,7 @@
       text-align: center;
       opacity: 0;
     }
+
     &::before {
       content: '';
       position: absolute;
@@ -29,7 +36,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background-image: linear-gradient(to bottom, rgba(0, 26, 63, 0), rgba(0, 26, 63, 0.8));
+      background: linear-gradient(to bottom, rgba(0, 26, 63, 0.5), rgba(0, 26, 63, 0.8));
       display: block;
     }
   }

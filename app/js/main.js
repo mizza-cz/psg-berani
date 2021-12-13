@@ -1,13 +1,13 @@
 $(function(){
-  $('.homepage-video__player, .homepage-video__item a').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
+  // $('.homepage-video__player, .homepage-video__item a').magnificPopup({
+  //   disableOn: 700,
+  //   type: 'iframe',
+  //   mainClass: 'mfp-fade',
+  //   removalDelay: 160,
+  //   preloader: false,
 
-    fixedContentPos: false
-  });
+  //   fixedContentPos: false
+  // });
 
    $('select, .shop__check').styler();
    $('.mob-menu').on('click', function () {
@@ -74,12 +74,15 @@ $(function(){
 $('.article-nav__inner').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
+  // fade:true,
   arrows: false,
   asNavFor: '.article-slider',
   dots: false,
-  focusOnSelect: true,
+  // focusOnSelect: true,
   centerMode: true,
+  
   centerPadding: '0px',
+  
 });
 var _gallery_loading = false;
 
