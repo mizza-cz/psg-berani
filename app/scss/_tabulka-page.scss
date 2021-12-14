@@ -1,0 +1,28 @@
+table {
+  .nastym {
+    td {
+      background-color: $yellow;
+    }
+  }
+  tr {
+    td,
+    th {
+      width: auto;
+      text-align: center;
+    }
+    .tym {
+      text-align: left;
+      font-weight: 700;
+      font-kerning: normal;
+      width: 100%;
+    }
+    .poradi {
+      width: 10px;
+    }
+  }
+}
+.table-id {
+  .tym {
+    width: auto;
+  }
+}

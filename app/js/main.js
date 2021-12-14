@@ -121,3 +121,5 @@ $('a[data-gallery]').click(function () {
 });
 })
 
+ // table sort
+ new Tablesort(document.querySelector('.table-id'));

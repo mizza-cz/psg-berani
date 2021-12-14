@@ -1,0 +1,105 @@
+.mladez {
+  &__info {
+    &-row {
+      border-bottom: 1px solid $silver;
+      padding: 24px 16px;
+      .tag {
+        margin-bottom: 8px;
+      }
+      h4 {
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+    }
+  }
+  .tabs {
+    background-color: $dark-blue;
+    justify-content: center;
+    margin-right: -70px;
+    margin-left: -70px;
+    padding: 4px;
+    li {
+      .active {
+        color: $yellow;
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.rozcestnik {
+  &__category {
+    display: flex;
+    justify-content: center;
+    background-color: #faf9f9;
+    border-top: 1px solid $silver;
+    padding: 4px;
+    margin-left: -70px;
+    margin-right: -70px;
+    li {
+      padding: 0 8px;
+      .active {
+        border-bottom: 3px solid $yellow;
+      }
+      a {
+        border-bottom: 3px solid transparent;
+        text-transform: uppercase;
+        font-family: poster-gothic-cond-atf, sans-serif;
+        font-weight: 600;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .mladez .tabs,
+  .rozcestnik__category {
+    margin-left: -32px;
+    margin-right: -32px;
+    flex-wrap: wrap;
+  }
+  .mladez-page {
+    .main-padding {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .mladez .tabs,
+  .rozcestnik__category {
+    margin: 0;
+  }
+  .mladez .tabs {
+    margin-bottom: 24px;
+  }
+  .mladez-page {
+    .main-padding {
+      padding: 32px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .mladez {
+    .main__header {
+      margin-bottom: 16px;
+      display: block;
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .mladez__info-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
