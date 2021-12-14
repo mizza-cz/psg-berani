@@ -122,4 +122,5 @@ $('a[data-gallery]').click(function () {
 })
 
  // table sort
- new Tablesort(document.querySelector('.table-id'));
+ new Tablesort(document.getElementById('table-id'));
+ new Tablesort(document.getElementById('table-id2'));
