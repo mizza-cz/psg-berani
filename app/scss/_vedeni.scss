@@ -1,0 +1,19 @@
+.vedeni {
+  h2 {
+    margin-bottom: 32px;
+  }
+  .table-responsive {
+    table {
+      tr {
+        td:first-child {
+          width: 250px;
+        }
+        td,
+        th {
+          text-align: left;
+          width: auto;
+        }
+      }
+    }
+  }
+}
