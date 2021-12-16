@@ -18,6 +18,9 @@
   &__logo {
     width: 68px;
     height: 80px;
+    img {
+      object-fit: cover;
+    }
   }
   &__name {
     font-family: poster-gothic-cond-atf, sans-serif;
