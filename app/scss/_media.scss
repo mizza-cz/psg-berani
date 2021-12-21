@@ -24,6 +24,16 @@
   }
 }
 @media (max-width: 840px) {
+  .stadiony {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .stadion {
+    padding: 0;
+    max-width: 100%;
+    flex: 100%;
+  }
   .homepage {
     .clanek {
       max-width: 50%;
