@@ -2,6 +2,12 @@
   h2 {
     margin-bottom: 32px;
   }
+  h3 {
+    margin-bottom: 32px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
   .table-responsive {
     table {
       tr {
@@ -17,3 +23,10 @@
     }
   }
 }
+p {
+  iframe {
+    width: 100%;
+    display: block;
+  }
+}
+

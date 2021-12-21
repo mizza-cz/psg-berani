@@ -1,5 +1,3 @@
-.header {
-}
 .mob-menu {
   display: none;
 }
@@ -47,6 +45,7 @@
 .navbar {
   background-color: $yellow;
   box-shadow: 0 8px 24px 0 rgba(0, 8, 20, 0.1), 0 1px 4px 0 rgba(0, 8, 20, 0.1);
+  position: relative;
   &__menu {
     display: flex;
     align-items: center;
@@ -78,34 +77,46 @@
       border-bottom: 5px solid transparent;
       &:hover {
         border-bottom: 5px solid $dark-blue;
-        .dropdown-menu {
+        .dropdown {
           transition: all 0.8s;
-          display: block;
           z-index: 28;
+          border-bottom: 3px solid $blue;
+          display: flex;
+          &-menu {
+            display: flex;
+          }
         }
       }
     }
   }
 }
-.dropdown-menu {
+.dropdown {
   position: fixed;
-  max-width: 1280px;
-  right: 0;
-  margin: 0 auto;
-  top: 165px;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 0px 16px;
-  margin: 0 auto;
   width: 100%;
+  top: 165px;
+  z-index: 1000;
+  left: 0;
+  display: none;
+  justify-content: center;
+  padding: 0px 16px;
   background-color: #fff;
+  border-bottom: 3px solid $blue;
+}
+.dropdown-menu {
+  max-width: 1280px;
+  min-width: 160px;
+  width: 100%;
+  min-height: 30px;
+  max-height: 90px;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+
   &__list {
-    display: inline-block;
-    top: 100px;
+    display: block;
     padding: 0 8px;
+    max-width: 10%;
+    flex: 0 0 10%;
     &:hover {
       a {
         text-decoration: underline;
@@ -115,7 +126,7 @@
       font-size: 1rem;
       font-family: poster-gothic-cond-atf, sans-serif;
       font-weight: 600;
-      line-height: 2;
+      line-height: 1.5;
       color: $dark-blue;
       transition: all 0.3s;
     }
@@ -146,11 +157,16 @@
     padding: 0;
     height: 68px;
   }
-  .header .navbar__menu-list:hover .dropdown-menu {
-    height: 0;
-    position: static;
-    transition: all 0s;
-    display: none;
+  .header .navbar__menu-list:hover {
+    .dropdown {
+      height: 0;
+      position: static;
+      transition: all 0s;
+      display: none;
+      &-menu {
+        max-height: auto;
+      }
+    }
   }
   .header .navbar__menu-list.active {
     .navbar__menu-item {
@@ -158,8 +174,10 @@
         background-image: url('../images/svg/minus.svg');
       }
     }
-
     .dropdown-menu {
+      max-height: initial !important;
+    }
+    .dropdown {
       height: 100%;
       display: block;
       position: static;
@@ -171,6 +189,10 @@
       padding-top: 7px;
       position: relative;
       padding-bottom: 13px;
+      &-menu {
+        display: block;
+        max-height: auto;
+      }
     }
   }
   .head__logo {
@@ -267,6 +289,8 @@
   .dropdown-menu__list {
     padding: 0;
     display: block;
+    max-width: 100%;
+    flex: 100%;
     a {
       width: 100%;
       padding-right: 44px;
