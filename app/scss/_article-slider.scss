@@ -7,6 +7,7 @@
   position: relative;
   .slick-slide.slick-active {
     .article {
+      opacity: 1;
       &::before {
         background: linear-gradient(to bottom, rgba(0, 26, 63, 0), rgba(0, 26, 63, 0.8));
       }
@@ -17,6 +18,7 @@
   }
 
   .article {
+    opacity: 0.5;
     position: relative;
     h1 {
       text-shadow: 0 2px 2px rgba(0, 8, 20, 0.5);
