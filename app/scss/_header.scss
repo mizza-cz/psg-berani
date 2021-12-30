@@ -49,7 +49,7 @@
   &__menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+
     a.navbar__menu-item {
       text-decoration: underline;
       &:hover {
@@ -57,15 +57,17 @@
       }
     }
     &-item {
+      border-bottom: 5px solid transparent;
       transform: all 0.4s;
       color: $dark-blue;
       font-size: 1.25rem;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 700;
       position: relative;
       line-height: 1.4;
       padding: 15px 16px 13px;
       letter-spacing: 1.05px;
+      border-bottom: 5px solid transparent;
       font-family: poster-gothic-cond-atf, sans-serif;
     }
     &-list {
@@ -74,16 +76,18 @@
       display: flex;
       align-items: center;
       height: 100%;
-      border-bottom: 5px solid transparent;
+
       &:hover {
-        border-bottom: 5px solid $dark-blue;
-        &::after {
-          content: '';
-          position: absolute;
-          right: 0;
-          bottom: -1px;
-          border: 14px solid transparent;
-          border-bottom: 9px solid $dark-blue;
+        div.navbar__menu-item {
+          border-bottom: 5px solid $dark-blue;
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            border: 14px solid transparent;
+            border-bottom: 9px solid $dark-blue;
+          }
         }
         .dropdown {
           transition: all 0.8s;
@@ -152,7 +156,7 @@
 }
 
 @media (max-width: 1040px) {
-  .header {
+  .header .head {
     .container {
       padding: 0;
     }
@@ -176,9 +180,11 @@
     height: 68px;
   }
   .header .navbar__menu-list:hover {
-    border: none;
-    &::after {
-      display: none;
+    .navbar__menu-item {
+      border: none;
+      &::after {
+        display: none;
+      }
     }
     .dropdown {
       height: 0;
