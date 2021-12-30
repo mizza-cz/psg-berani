@@ -66,7 +66,7 @@ $(function(){
       slidesToShow: 1,
       centerMode: false,
       variableWidth:false,
-      autoplay: true,
+      autoplay: false,
     },
 
   }]
@@ -78,10 +78,8 @@ $('.article-nav__inner').slick({
   arrows: false,
   asNavFor: '.article-slider',
   dots: false,
-  // focusOnSelect: true,
-  centerMode: true,
+  focusOnSelect: true,
   
-  centerPadding: '0px',
   
 });
 var _gallery_loading = false;
