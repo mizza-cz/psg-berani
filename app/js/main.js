@@ -1,3 +1,8 @@
+ //// scroll
+ window.addEventListener('scroll', function () {
+  var header = document.querySelector('.header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
 $(function(){
   // $('.homepage-video__player, .homepage-video__item a').magnificPopup({
   //   disableOn: 700,
@@ -122,3 +127,4 @@ $('a[data-gallery]').click(function () {
  // table sort
  new Tablesort(document.getElementById('table-id'));
  new Tablesort(document.getElementById('table-id2'));
+

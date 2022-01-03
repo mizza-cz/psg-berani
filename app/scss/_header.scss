@@ -1,6 +1,13 @@
 .mob-menu {
   display: none;
 }
+.header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
 .head {
   background-color: $dark-blue;
   &__inner {
@@ -50,12 +57,6 @@
     display: flex;
     align-items: center;
 
-    a.navbar__menu-item {
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-      }
-    }
     &-item {
       border-bottom: 5px solid transparent;
       transform: all 0.4s;
@@ -65,7 +66,7 @@
       font-weight: 700;
       position: relative;
       line-height: 1.4;
-      padding: 15px 16px 13px;
+      padding: 11px 16px 6px;
       letter-spacing: 1.05px;
       border-bottom: 5px solid transparent;
       font-family: poster-gothic-cond-atf, sans-serif;
@@ -105,7 +106,7 @@
 .dropdown {
   position: fixed;
   width: 100%;
-  top: 165px;
+  top: 154px;
   z-index: 1000;
   left: 0;
   display: none;
@@ -121,6 +122,7 @@
   min-height: 30px;
   max-height: 90px;
   display: flex;
+  padding: 5px 0;
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
