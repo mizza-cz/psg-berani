@@ -372,7 +372,12 @@ table {
     padding-right: 16px;
   }
 }
-
+.jq-selectbox.dropdown {
+  display: block;
+  position: relative;
+  top: 0;
+  padding: 0;
+}
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
