@@ -7,6 +7,9 @@
   top: 0;
   left: 0;
   z-index: 999;
+  .dropdown {
+    top: 154px;
+  }
 }
 .head {
   background-color: $dark-blue;
@@ -91,7 +94,6 @@
           }
         }
         .dropdown {
-          transition: all 0.8s;
           z-index: 28;
           border-bottom: 4px solid $dark-blue;
           display: flex;
@@ -106,7 +108,7 @@
 .dropdown {
   position: fixed;
   width: 100%;
-  top: 154px;
+  top: 194px;
   z-index: 1000;
   left: 0;
   display: none;
@@ -173,7 +175,7 @@
     top: 100%;
     right: 0px;
     z-index: 9999;
-    top: 68px;
+    top: 108px;
     width: 320px;
     margin-left: auto;
   }
