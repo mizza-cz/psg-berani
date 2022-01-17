@@ -51,4 +51,14 @@ select {
   transition: 0.3s all linear;
 }
 
+.selects__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  select {
+    margin-bottom: 16px;
+  }
+}
+
 @import 'media';
