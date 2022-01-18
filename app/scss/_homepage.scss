@@ -1,4 +1,11 @@
 .homepage {
+  &.mladez-hp {
+    .zapasy__inner {
+      justify-content: center;
+    }
+    .zapasy__item {
+    }
+  }
   &-video {
     margin-bottom: 40px;
     &__player {

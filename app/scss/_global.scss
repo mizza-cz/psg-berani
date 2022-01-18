@@ -161,6 +161,20 @@ main {
     object-fit: cover;
   }
 }
+.banlink-wrap {
+  display: flex;
+  margin-left: -16px;
+  margin-right: -16px;
+  flex-wrap: wrap;
+  .banlink {
+    height: 240px;
+  }
+}
+.banlink__item {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding: 0 16px;
+}
 .link {
   color: $dark-blue;
   font-size: 0.875rem;

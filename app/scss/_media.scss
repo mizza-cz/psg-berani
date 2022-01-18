@@ -22,6 +22,14 @@
   .homepage-video__menu {
     width: 100%;
   }
+  .banlink__item {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0 8px;
+    .banlink {
+      margin-bottom: 16px;
+    }
+  }
 }
 @media (max-width: 840px) {
   .stadiony {
@@ -106,6 +114,10 @@
   }
 }
 @media (max-width: 570px) {
+  .banlink__item {
+    max-width: 100%;
+    flex: 100%;
+  }
   p iframe,
   .homepage-video__player iframe {
     height: 270px;
