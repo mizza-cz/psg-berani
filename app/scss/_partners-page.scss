@@ -2,6 +2,7 @@
   text-align: center;
   h2 {
     margin-bottom: 32px;
+    text-align: left;
   }
   .subtitle {
     border-bottom: 1px solid #cfd8dc;
@@ -17,7 +18,7 @@
       .partners-page__item {
         max-width: 20%;
         flex: 0 0 20%;
-        height: 200px;
+        height: auto;
       }
     }
     &--general {
@@ -40,8 +41,8 @@
     flex: 0 0 25%;
     padding: 16px;
 
-    margin-bottom: 16px;
     a {
+      display: block;
       padding: 16px;
       border: 1px solid $silver;
       box-shadow: 0 2px 8px 0 rgba(2, 4, 62, 0.05), inset 0 1px 0 0 #cfd8dc;
