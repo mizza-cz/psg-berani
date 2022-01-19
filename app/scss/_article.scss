@@ -44,8 +44,6 @@
       }
       &__inner {
         margin-bottom: 16px;
-        flex-direction: column;
-        align-items: center;
       }
     }
     h1 {
@@ -144,6 +142,25 @@
   }
 }
 @media (max-width: 740px) {
+  .article-page__content .zapas__inner {
+    flex-direction: column;
+    align-items: center;
+    .zapas__box {
+      justify-content: center;
+      margin-bottom: 8px;
+      max-width: 100%;
+      flex: 100%;
+      width: 100%;
+    }
+    .zapas__result {
+      max-width: 100%;
+      flex: 100%;
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+      text-align: left;
+    }
+  }
   .article-page__img {
     img {
       min-height: 155px;
