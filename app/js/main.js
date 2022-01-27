@@ -38,6 +38,16 @@ $(function(){
         .fadeIn();
       return false;
     });
+    $('.zapasy__tabs .tab').on('click', function (event) {
+      var id = $(this).attr('data-id');
+      $('.zapasy__tabs').find('.zapasy__inner').removeClass('tab-active').hide();
+      $('.zapasy__tabs .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#' + id)
+        .addClass('tab-active')
+        .fadeIn();
+      return false;
+    });
 
 
  $('.article-slider').slick({

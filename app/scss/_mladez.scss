@@ -55,6 +55,14 @@
     }
   }
 }
+.zapasy__tabs {
+  .zapasy__inner {
+    display: none;
+    &.tab-active {
+      display: flex;
+    }
+  }
+}
 @media (max-width: 1240px) {
   .mladez .tabs,
   .rozcestnik__category {
