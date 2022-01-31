@@ -150,7 +150,7 @@ main {
 }
 .banlink {
   width: 100%;
-  height: 128px;
+  // height: 128px;
   display: block;
   max-width: 1920px;
   margin: 0 auto 40px;
@@ -158,7 +158,7 @@ main {
     height: 100%;
   }
   img {
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 .banlink-wrap {
@@ -335,6 +335,15 @@ table {
   position: relative;
   top: 0;
   padding: 0;
+}
+.typography {
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (max-width: 767px) {
   .table-responsive {

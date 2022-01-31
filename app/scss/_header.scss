@@ -80,6 +80,9 @@
       display: flex;
       align-items: center;
       height: 100%;
+      & + & {
+        margin-left: 16px;
+      }
 
       &:hover {
         div.navbar__menu-item {
@@ -160,6 +163,9 @@
 }
 
 @media (max-width: 1040px) {
+  .navbar__menu-list + .navbar__menu-list {
+    margin-left: 0;
+  }
   .header .head {
     .container {
       padding: 0;

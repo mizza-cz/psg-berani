@@ -72,7 +72,7 @@
     }
   }
   .banlink {
-    height: 122px;
+    // height: 122px;
     margin-bottom: 24px;
   }
   h3 {
@@ -114,6 +114,11 @@
   }
 }
 @media (max-width: 570px) {
+  .homepage-partners__item {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 16px;
+  }
   .banlink__item {
     max-width: 100%;
     flex: 100%;
