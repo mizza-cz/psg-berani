@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0 12px 4px;
+    padding: 8px 0 8px 4px;
   }
   &__team {
     display: flex;
@@ -94,9 +94,9 @@
             content: '';
             position: absolute;
             right: 0;
-            bottom: -1px;
-            border: 14px solid transparent;
-            border-bottom: 9px solid $dark-blue;
+            bottom: 0px;
+            border: 12px solid transparent;
+            border-bottom: 8px solid $dark-blue;
           }
         }
         .dropdown {
@@ -114,7 +114,7 @@
 .dropdown {
   position: fixed;
   width: 100%;
-  top: 194px;
+  top: 186px;
   z-index: 1000;
   left: 0;
   display: none;
@@ -156,7 +156,7 @@
       }
     }
     a {
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-family: poster-gothic-cond-atf, sans-serif;
       font-weight: 600;
       line-height: 1.5;
