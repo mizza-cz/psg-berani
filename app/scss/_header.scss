@@ -128,9 +128,8 @@
   min-width: 160px;
   width: 100%;
   min-height: 30px;
-  max-height: 90px;
+  max-height: 89px;
   display: flex;
-  padding: 0px 0 5px;
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
@@ -148,7 +147,7 @@
     padding: 0 16px;
 
     width: auto;
-
+    height: 30px;
     margin: 0;
     outline-offset: -1px;
     &:hover {
