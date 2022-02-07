@@ -37,7 +37,7 @@
   &-top {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 60px;
+    padding: 20px 60px 0 60px;
     background-color: $dark-blue;
     position: relative;
     align-items: center;
@@ -77,6 +77,7 @@
       max-width: 53.45%;
       flex: 0 0 54.45%;
       padding-right: 10px;
+      padding-bottom: 20px;
     }
     &__info {
       display: flex;
@@ -133,9 +134,13 @@
     }
 
     &__img {
+      height: 320px;
       max-width: 46.55%;
       flex: 0 0 46.55%;
-      padding: 40px 50px 0 50px;
+      padding: 0px 50px 0 50px;
+      img {
+        object-fit: contain;
+      }
     }
   }
 }
@@ -148,7 +153,7 @@
     padding-left: 24px;
   }
   .hrac-top__img {
-    padding: 40px 24px 0 24px;
+    padding: 0px 24px 0 24px;
   }
 }
 @media (max-width: 1240px) {
@@ -202,6 +207,7 @@
   }
   .hrac-top__img {
     max-width: 400px;
+    height: auto;
     flex: 100%;
     margin: 0 auto 24px;
   }
@@ -239,7 +245,7 @@
     border-left: 1px solid $dark-gray;
   }
   .hrac-top {
-    padding: 0 16px 24px;
+    padding: 20px 16px 24px;
   }
   .hrac-top__arrow {
     display: none;
