@@ -78,6 +78,11 @@
   }
 }
 @media (max-width: 840px) {
+  .mladez-page {
+    .tab__content {
+      padding: 0 16px;
+    }
+  }
   .mladez .tabs,
   .rozcestnik__category {
     margin: 0;
@@ -99,6 +104,13 @@
       h2 {
         margin-bottom: 16px;
       }
+    }
+  }
+}
+@media (max-width: 740px) {
+  .mladez-page {
+    .tab__content {
+      padding: 0;
     }
   }
 }
