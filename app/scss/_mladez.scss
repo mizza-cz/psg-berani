@@ -1,3 +1,13 @@
+.mladez-page {
+  .soupiska__img::before {
+    background-color: $silver;
+  }
+
+  .soupiska__item:hover .soupiska__img::before {
+    background-color: $dark-blue;
+  }
+}
+
 .mladez {
   &__info {
     &-row {

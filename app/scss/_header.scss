@@ -128,7 +128,7 @@
   min-width: 160px;
   width: 100%;
   min-height: 30px;
-  max-height: 89px;
+  max-height: 100px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -144,10 +144,10 @@
 
   &__list {
     display: block;
-    padding: 0 16px;
+    padding: 4px 16px;
 
     width: auto;
-    height: 30px;
+    height: 34px;
     margin: 0;
     outline-offset: -1px;
     &:hover {
@@ -162,6 +162,7 @@
       line-height: 1.5;
       color: $dark-blue;
       transition: all 0.3s;
+      display: block;
     }
   }
 }

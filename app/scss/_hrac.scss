@@ -38,7 +38,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px 60px 0 60px;
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
+    background-image: url('/assets/images/content/hrac-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     align-items: center;
     &__list {
