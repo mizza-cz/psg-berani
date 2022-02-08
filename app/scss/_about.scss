@@ -1,4 +1,8 @@
 .about {
+  ol,
+  ol li {
+    list-style: auto;
+  }
   h2 {
     margin-bottom: 32px;
   }
