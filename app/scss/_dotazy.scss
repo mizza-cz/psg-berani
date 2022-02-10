@@ -1,0 +1,107 @@
+.form {
+  padding-top: 20px;
+  margin-bottom: 32px;
+  .btn {
+    border: none;
+    background: $yellow;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: tenon, sans-serif;
+    color: $dark-blue;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  &__row {
+    margin-left: -16px;
+    margin-right: -16px;
+    display: flex;
+    margin-bottom: 32px;
+  }
+  &__input {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    padding: 0 16px;
+    label {
+      width: 100%;
+      display: block;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 0 16px;
+      border: 1px solid $dark-gray;
+      height: 40px;
+    }
+  }
+  .tag {
+    color: $yellow;
+  }
+  .form__textarea {
+    margin-bottom: 32px;
+    label {
+      display: block;
+    }
+  }
+  textarea {
+    width: 100%;
+    display: block;
+    resize: none;
+    padding: 8px 16px;
+    border: 1px solid $dark-gray;
+  }
+}
+
+.dotazy {
+  h2 {
+    margin-bottom: 32px;
+  }
+  .menu-filtr {
+    margin-bottom: 24px;
+  }
+}
+
+.offline {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background: #ece9e9;
+    padding: 8px 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    a {
+      color: $dark-blue;
+    }
+  }
+  &__comment {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 770px) {
+  .form__row {
+    flex-wrap: wrap;
+  }
+  .form__input {
+    max-width: 100%;
+    flex: 100%;
+    margin-bottom: 24px;
+  }
+  .form .form__textarea {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .offline__header {
+    display: block;
+  }
+}
