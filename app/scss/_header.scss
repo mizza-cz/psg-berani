@@ -168,6 +168,9 @@
 }
 
 @media (max-width: 1040px) {
+  .navbar__menu-item.off-link {
+    pointer-events: none;
+  }
   .header.sticky {
     .navbar {
       top: 68px;
@@ -391,5 +394,11 @@
     font-size: 1.25rem;
     margin-top: 4px;
     margin-left: 12px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header .navbar {
+    top: 56px;
   }
 }

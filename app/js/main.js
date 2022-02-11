@@ -1,6 +1,18 @@
+document.querySelectorAll('.navbar__menu-list').forEach(n => {
+  let name = n.querySelector('.dropdown');
+  let link = n.querySelector('.navbar__menu-item');
+  if(name){
+    link.classList.toggle(
+      'off-link',
+    );
+  }
+});
+
+ 
  //// scroll
+ 
  window.addEventListener('scroll', function () {
-  var header = document.querySelector('.header');
+  let header = document.querySelector('.header');
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 $(function(){
@@ -23,7 +35,7 @@ $(function(){
       location.href = $(this).val();
     });
 
-    $('.navbar__menu-item').on('click', function () {
+    $('.navbar__menu-list').on('click', function () {
       $(this).closest('.navbar__menu-list').toggleClass('active');
     });
 
