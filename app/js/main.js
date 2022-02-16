@@ -1,3 +1,6 @@
+
+
+
 document.querySelectorAll('.navbar__menu-list').forEach(n => {
   let name = n.querySelector('.dropdown');
   let link = n.querySelector('.navbar__menu-item');

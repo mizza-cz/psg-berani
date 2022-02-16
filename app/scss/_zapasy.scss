@@ -352,3 +352,12 @@ a.zapas__teams {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .zapas__result {
+    width: auto;
+  }
+  .zapas .zapasy__date {
+    line-height: 1.1;
+  }
+}
