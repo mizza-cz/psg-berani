@@ -1,4 +1,9 @@
 .about {
+  table {
+    td img {
+      object-fit: cover;
+    }
+  }
   ol,
   ol li {
     list-style: auto;
@@ -24,7 +29,6 @@
     margin-right: 64px;
   }
 }
-
 
 @media (max-width: 660px) {
   .about__header {
