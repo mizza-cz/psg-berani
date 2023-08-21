@@ -15,3 +15,24 @@
     }
   }
 }
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
+.page-item {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  margin: 0 0.25rem;
+}
+.page-item.active,
+.page-item:hover {
+  border-color: #fecd00;
+  background: #fecd00;
+}
+.page-item .page-link {
+  width: 100%;
+}
